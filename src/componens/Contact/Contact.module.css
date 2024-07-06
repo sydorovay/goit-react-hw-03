@@ -35,3 +35,7 @@
 .deleteButton:hover {
   background-color: #FF0000;
 }
+.user,
+.phone{
+margin-right: 5px;
+}
