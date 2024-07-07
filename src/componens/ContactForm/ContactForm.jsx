@@ -3,12 +3,17 @@ import * as Yup from 'yup';
 import { v4 as uuidv4 } from 'uuid';
 import css from './ContactForm.module.css';
 
+
 const ContactForm = ({ addContact }) => {
   const initialValues = { name: '', number: '' };
-  
+
   const validationSchema = Yup.object({
-    name: Yup.string().required('Required'),
-    number: Yup.string().required('Required'),
+    name: Yup.string()
+      .min(2, 'To Short')
+      .required('Required'),
+    number: Yup.string()
+      .min(3, 'Too Short')
+      .required('Required'),
   });
 
   const handleSubmit = (values, { resetForm }) => {

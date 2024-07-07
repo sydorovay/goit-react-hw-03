@@ -1,5 +1,4 @@
 .searchBox {
-
   border-top: 1px solid;
   border-bottom: 1px solid;
   padding: 20px 0px;
@@ -19,4 +18,7 @@
 
 .searchBox input:focus {
   border-color: #5787BD;
+}
+.searchHeader {
+  margin: 10px 0px;
 }
