@@ -9,7 +9,7 @@ const ContactForm = ({ addContact }) => {
 
   const validationSchema = Yup.object({
     name: Yup.string()
-      .min(2, 'To Short!')
+      .min(2, 'Too Short!')
       .required('Required'),
     number: Yup.string()
       .min(3, 'Too Short!')
