@@ -3,7 +3,7 @@
   flex-direction: column;
   border: 2px solid #010509;
   padding: 10px;
-
+  align-items: center;
   border-radius: 5px;
 }
 
@@ -21,7 +21,18 @@
   padding: 8px;
   border: 1px solid #000000da;
   border-radius: 4px;
+  transition: border-color 0.3s ease;
 }
+
+.formGroup input:hover {
+  border-color: #5787BD;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #5787BD;
+}
+
 
 .errorMessage {
   color: red;
@@ -29,14 +40,14 @@
 }
 
 .addContactButton {
-  background-color: #666668;
-  color: white;
-  border: none;
+  display: flex;
+  background-color: #f0f0f0;
   padding: 10px 20px;
+  border: 1px solid #000000da;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .addContactButton:hover {
-  background-color: #000102;
+  background-color: #d1d1d1;
 }

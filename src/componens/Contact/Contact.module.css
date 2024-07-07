@@ -4,13 +4,17 @@
   padding: 10px;
   border: 2px solid #000000;
   border-radius: 5px;
+}
 
+.contactItem:hover {
+  border-color: #5787BD;
+  color: #5787BD;
 }
 
 .contactInfo {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .contactName {
@@ -22,7 +26,7 @@
 }
 
 .deleteButton {
-  background-color: pink;
+  background-color: ;
   color: black;
   border: 1px solid;
   border-color: black;
@@ -33,9 +37,11 @@
 }
 
 .deleteButton:hover {
-  background-color: #FF0000;
+  background-color: #b4b4b4;
+  color: white;
 }
+
 .user,
-.phone{
-margin-right: 5px;
+.phone {
+  margin-right: 5px;
 }
